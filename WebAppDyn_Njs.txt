@@ -1,0 +1,15 @@
+// server.js
+
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
+
+// Définir une route simple
+app.get('/', (req, res) => {
+    res.send('Bienvenue Groupe IDOSR201 sur votre application web dynamique sur Azure!');
+});
+
+// Démarrer le serveur
+app.listen(port, () => {
+    console.log(`L'application écoute sur le port ${port}`);
+});
